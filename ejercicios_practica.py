@@ -32,8 +32,38 @@ def ej1():
       la operación realizada en cada caso y con que números
       se ha realizado la operación
       ej: La suma entre 4.2 y 6.5 es 10.7
+   
 
     '''
+  # Ingrese los numeros reales por consola:
+    print('Ingrese el primer número real a operar:')
+    numero_1 = float(input())
+
+    print('Ingrese el segundo número real a operar:')
+    numero_2 = float(input())
+
+    # Suma
+    Suma = numero_1 + numero_2
+    print('La Suma entre', numero_1, 'y', numero_2, 'es', Suma)
+
+    # Resta
+    Resta = numero_1 - numero_2
+    print('La Resta entre', numero_1, 'y', numero_2, 'es', Resta)
+
+    # División
+    División = numero_1 / numero_2
+    print('La División entre', numero_1, 'y', numero_2, 'es', División)
+
+    # Multiplicación
+    Multiplicación = numero_1 * numero_2
+    print('La Multiplicación entre', numero_1, 'y', numero_2, 'es', Multiplicación)
+
+    # Potencia
+    Potencia = numero_1 ** numero_2
+    print('La Potencia entre', numero_1, 'y', numero_2, 'es', Potencia)
+
+    print('hola')
+
 
 
 def ej2():
@@ -55,6 +85,29 @@ def ej2():
       entienda de que se está hablando.
 
     '''
+    # Ingrese su Nombre completo y Apellido
+    print('Ingrese su Nombre completo y Apellido:')
+    nombre_completo = str(input())
+
+    # Ingrese su DNI, sin puntos ni comas
+    print('Ingrese su DNI, sin puntos ni comas:')
+    Documento = float(input())
+
+    # Ingrese su edad
+    print('Ingrese su Edad:')
+    Edad = str(input())
+
+    # Ingrese su altura
+    print('Ingrese su Altura:')
+    Altura = float(input())
+
+    # Imprima su nombre completo y documento
+    print('Mi nombre completo es', nombre_completo, '','DNI N°', Documento)
+
+    # Imprima su nombre completo, edad y altura
+    print('Mi nombre completo es', nombre_completo, '', 'Edad', Edad, 'Altura', Altura, 'mts.')
+
+    print('hola')
 
 
 def ej3():
@@ -87,9 +140,26 @@ def ej3():
     https://www.pythonforbeginners.com/dictionary/python-split
 
     Cualquier duda con el método split pueden consultarla por el campus
-
+    
     '''
+    # Ingrese el nombre completo de su madre
+    print('Ingrese el nombre completo de su madre:')
+    nombre_madre = str(input())
+    nombre_1, apellido_1 = nombre_madre.split(' ')
 
+    # Ingrese el nombre completo de su padre
+    print('Ingrese el nombre completo de su padre:')
+    nombre_padre = str(input())
+    nombre_2, apellido_2 = nombre_padre.split(' ')
+
+    # Ingrese su nombre
+    print('Ingrese su nombre completo:')
+    nombre_hijo = str(input())
+
+    # Su nombre completo y apellido es:
+    print('Su nombre completo es', nombre_hijo, '', apellido_2)
+
+    print('hola')
 
 def ej4():
     # Ejercicios de práctica con cadenas
@@ -123,7 +193,24 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
+    # Ingrese el nombre y el apellido de la persona_1:
+    print('Ingrese el nombre y el apellido:')
+    persona_1 = str(input())
+    nombre_1, apellido_1 = persona_1.split(' ')
 
+    # Ingrese el nombre y el apellido de la persona_2:
+    print('Ingrese el nombre y el apellido:')
+    persona_2 = str(input())
+    nombre_2, apellido_2 = persona_2.split(' ')
+
+    # Extraigo el apellido de la persona_2:
+    apellido_objetivo = apellido_2
+
+    # El apellido_2 esta contenido en persona_1
+    es_pariente = apellido_2 in persona_1
+    print('son pariente entre si', es_pariente)
+
+    print('boca te amo')
 
 def ej5():
     # Ejercicios de práctica con cadenas
@@ -149,12 +236,26 @@ def ej5():
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
+    # Ingrese su nombre completo:
+    print('Ingrese su nombre completo:')
+    mi_nombre = str(input())
 
+    # Imprimir todas las letras en minúsculas:
+    print(mi_nombre.lower()) 
+
+    # Imprimir todas las letras en mayúsculas:
+    print(mi_nombre.upper()) 
+
+    # Imprimir el nombre completo con solo la primera letra del nombre en mayúscula:
+    print(mi_nombre.capitalize()) 
+
+
+    print('vamos bocaaaaa')
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    # ej1()
     # ej2()
-    # ej3()
+    ej3()
     # ej4()
     # ej5()
